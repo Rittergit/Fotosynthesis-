@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/CustomAssets/Scenes/Fotosynthesis.unity
+  isLoaded: 1
+  isActive: 1

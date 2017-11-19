@@ -1,5 +1,13 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
+<type fullname="AnimationBehaviors" preserve="all"/>
+<type fullname="CharacterBehaviors" preserve="all"/>
+<type fullname="FisticuffsController" preserve="all"/>
+<type fullname="FollowCameraPrecise" preserve="all"/>
+<type fullname="GloveScript" preserve="all"/>
+<type fullname="LookAtCameraFisticuffs" preserve="all"/>
+<type fullname="TimedSelfDeactivate" preserve="all"/>
+<type fullname="TimedSelfDestruct" preserve="all"/>
 <type fullname="ARCamera" preserve="all"/>
 <type fullname="ARController" preserve="all"/>
 <type fullname="ARMarker" preserve="all"/>

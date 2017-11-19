@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/ARToolKit5-Unity/Example Scenes/BarcodeScene.unity
+    guid: a22883dbab7d84ef3972bdd06b9e589d

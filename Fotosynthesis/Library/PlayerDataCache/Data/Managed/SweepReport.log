@@ -2,8 +2,8 @@
 All Assemblies
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 2125
-    Nested = 152
+  Total Type Removals = 2123
+    Nested = 153
     Interfaces = 123
     Abstract Classes = 158
     Generic Types = 87
@@ -11,7 +11,7 @@ Summary:
     Generic Abstract Classes = 3
     Attributes = 183
   Total Field Removals = 727
-  Total Method Removals = 11202
+  Total Method Removals = 11212
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Mono.Security
@@ -8525,7 +8525,7 @@ Summary:
 Assembly: UnityEngine.AnimationModule
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 43
+  Total Type Removals = 41
     Nested = 0
     Interfaces = 1
     Abstract Classes = 3
@@ -8534,10 +8534,66 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 0
-  Total Method Removals = 336
+  Total Method Removals = 391
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.Animation
+        .ctor()
+        AddClip(UnityEngine.AnimationClip,System.String)
+        AddClip(UnityEngine.AnimationClip,System.String,System.Int32,System.Int32)
+        AddClip(UnityEngine.AnimationClip,System.String,System.Int32,System.Int32,System.Boolean)
+        Blend(System.String)
+        Blend(System.String,System.Single)
+        Blend(System.String,System.Single,System.Single)
+        CrossFade(System.String)
+        CrossFade(System.String,System.Single)
+        CrossFade(System.String,System.Single,UnityEngine.PlayMode)
+        CrossFadeQueued(System.String)
+        CrossFadeQueued(System.String,System.Single)
+        CrossFadeQueued(System.String,System.Single,UnityEngine.QueueMode)
+        CrossFadeQueued(System.String,System.Single,UnityEngine.QueueMode,UnityEngine.PlayMode)
+        get_animateOnlyIfVisible()
+        get_animatePhysics()
+        get_clip()
+        get_cullingType()
+        get_isPlaying()
+        get_Item(System.String)
+        get_localBounds()
+        get_playAutomatically()
+        get_wrapMode()
+        GetClip(System.String)
+        GetClipCount()
+        GetState(System.String)
+        INTERNAL_CALL_Rewind(UnityEngine.Animation)
+        INTERNAL_CALL_Sample(UnityEngine.Animation)
+        INTERNAL_CALL_SyncLayer(UnityEngine.Animation,System.Int32)
+        INTERNAL_get_localBounds(UnityEngine.Bounds&)
+        Internal_RewindByName(System.String)
+        INTERNAL_set_localBounds(UnityEngine.Bounds&)
+        Internal_StopByName(System.String)
+        Play()
+        Play(System.String,UnityEngine.AnimationPlayMode)
+        Play(UnityEngine.AnimationPlayMode)
+        Play(UnityEngine.PlayMode)
+        PlayDefaultAnimation(UnityEngine.PlayMode)
+        PlayQueued(System.String)
+        PlayQueued(System.String,UnityEngine.QueueMode)
+        PlayQueued(System.String,UnityEngine.QueueMode,UnityEngine.PlayMode)
+        RemoveClip(System.String)
+        RemoveClip(UnityEngine.AnimationClip)
+        RemoveClip2(System.String)
+        Rewind()
+        Rewind(System.String)
+        Sample()
+        set_animateOnlyIfVisible(System.Boolean)
+        set_animatePhysics(System.Boolean)
+        set_clip(UnityEngine.AnimationClip)
+        set_cullingType(UnityEngine.AnimationCullingType)
+        set_localBounds(UnityEngine.Bounds)
+        set_playAutomatically(System.Boolean)
+        set_wrapMode(UnityEngine.WrapMode)
+        Stop(System.String)
+        SyncLayer(System.Int32)
     UnityEngine.AnimationBlendMode
     UnityEngine.AnimationClip
     UnityEngine.AnimationClipPair
@@ -8809,7 +8865,6 @@ Summary:
         StringToHash(System.String)
     UnityEngine.Animations.IAnimatorControllerPlayable
     UnityEngine.AnimationState
-        .ctor()
         AddMixingTransform(UnityEngine.Transform)
         AddMixingTransform(UnityEngine.Transform,System.Boolean)
         get_blendMode()
@@ -8907,7 +8962,6 @@ Summary:
     UnityEngine.MatchTargetWeightMask
     UnityEngine.Motion
     UnityEngine.Playables.AnimationPlayableUtilities
-    UnityEngine.PlayMode
     UnityEngine.QueueMode
     UnityEngine.RuntimeAnimatorController
     UnityEngine.SharedBetweenAnimatorsAttribute
@@ -9002,7 +9056,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 0
-  Total Method Removals = 237
+  Total Method Removals = 233
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.Audio.AudioClipPlayable
@@ -9224,10 +9278,7 @@ Summary:
         PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3)
         PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single)
         PlayDelayed(System.Single)
-        PlayOneShot(UnityEngine.AudioClip)
-        PlayOneShot(UnityEngine.AudioClip,System.Single)
         PlayOneShotHelper(UnityEngine.AudioClip)
-        PlayOneShotHelper(UnityEngine.AudioClip,System.Single)
         PlayScheduled(System.Double)
         ReadExtensionProperty(UnityEngine.PropertyName,UnityEngine.PropertyName,System.Single&)
         set_bypassEffects(System.Boolean)
@@ -9265,7 +9316,6 @@ Summary:
         SetScheduledEndTime(System.Double)
         SetScheduledStartTime(System.Double)
         SetSpatializerFloat(System.Int32,System.Single)
-        Stop()
         UnPause()
     UnityEngine.AudioSourceCurveType
     UnityEngine.AudioSourceExtension
@@ -9287,7 +9337,7 @@ Assembly: UnityEngine.CoreModule
 ---------------------------------------------------
 Summary:
   Total Type Removals = 417
-    Nested = 11
+    Nested = 12
     Interfaces = 7
     Abstract Classes = 16
     Generic Types = 5
@@ -9295,7 +9345,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 56
   Total Field Removals = 37
-  Total Method Removals = 2747
+  Total Method Removals = 2708
   References Removed = 0
 ---------------------------------------------------
     AOT.MonoPInvokeCallbackAttribute
@@ -10155,7 +10205,6 @@ Summary:
         LogException(System.Exception,UnityEngine.Object)
         LogFormat(System.String,System.Object[])
         LogFormat(UnityEngine.Object,System.String,System.Object[])
-        LogWarning(System.Object,UnityEngine.Object)
         LogWarningFormat(System.String,System.Object[])
         LogWarningFormat(UnityEngine.Object,System.String,System.Object[])
         OpenConsoleFile()
@@ -10374,19 +10423,14 @@ Summary:
         BroadcastMessage(System.String,UnityEngine.SendMessageOptions)
         CompareTag(System.String)
         CreatePrimitive(UnityEngine.PrimitiveType)
-        Find(System.String)
         FindGameObjectsWithTag(System.String)
-        FindGameObjectWithTag(System.String)
-        FindWithTag(System.String)
         get_active()
-        get_activeInHierarchy()
         get_activeSelf()
         get_gameObject()
         get_isStatic()
         get_isStaticBatchable()
         get_layer()
         get_scene()
-        get_tag()
         GetComponent(System.String)
         GetComponent(System.Type)
         GetComponentByName(System.String)
@@ -10420,7 +10464,6 @@ Summary:
         SendMessageUpwards(System.String,UnityEngine.SendMessageOptions)
         set_active(System.Boolean)
         set_isStatic(System.Boolean)
-        set_tag(System.String)
         SetActiveRecursively(System.Boolean)
     UnityEngine.GeometryUtility
     UnityEngine.Gizmos
@@ -10555,7 +10598,6 @@ Summary:
         Log(System.Object)
         Log(System.String,System.Object)
         Log(System.String,System.Object,UnityEngine.Object)
-        Log(UnityEngine.LogType,System.Object,UnityEngine.Object)
         Log(UnityEngine.LogType,System.String,System.Object)
         Log(UnityEngine.LogType,System.String,System.Object,UnityEngine.Object)
         LogError(System.String,System.Object)
@@ -10602,7 +10644,6 @@ Summary:
         get_stylusTouchSupported()
         get_touches()
         get_touchPressureSupported()
-        get_touchSupported()
         GetAccelerationEvent(System.Int32)
         GetAxisRaw(System.String)
         GetButton(System.String)
@@ -10619,7 +10660,6 @@ Summary:
         GetKeyUp(UnityEngine.KeyCode)
         GetKeyUpInt(System.Int32)
         GetKeyUpString(System.String)
-        GetMouseButtonUp(System.Int32)
         INTERNAL_CALL_GetAccelerationEvent(System.Int32,UnityEngine.AccelerationEvent&)
         INTERNAL_get_acceleration(UnityEngine.Vector3&)
         INTERNAL_get_compositionCursorPos(UnityEngine.Vector2&)
@@ -10689,7 +10729,6 @@ Summary:
         Log(System.Object)
         Log(System.String,System.Object)
         Log(System.String,System.Object,UnityEngine.Object)
-        Log(UnityEngine.LogType,System.Object,UnityEngine.Object)
         Log(UnityEngine.LogType,System.String,System.Object)
         Log(UnityEngine.LogType,System.String,System.Object,UnityEngine.Object)
         LogError(System.String,System.Object)
@@ -11087,10 +11126,8 @@ Summary:
         IsInvoking()
         IsInvoking(System.String)
         set_useGUILayout(System.Boolean)
-        StartCoroutine(System.Collections.IEnumerator)
         StartCoroutine(System.String)
         StartCoroutine_Auto(System.Collections.IEnumerator)
-        StartCoroutine_Auto_Internal(System.Collections.IEnumerator)
         StopAllCoroutines()
         StopCoroutine(System.Collections.IEnumerator)
         StopCoroutine(UnityEngine.Coroutine)
@@ -11140,7 +11177,6 @@ Summary:
     UnityEngine.NetworkViewID
     UnityEngine.NPOTSupport
     UnityEngine.Object
-        CheckNullArgument(System.Object,System.String)
         DestroyObject(UnityEngine.Object)
         DestroyObject(UnityEngine.Object,System.Single)
         DoesObjectWithInstanceIDExist(System.Int32)
@@ -11156,18 +11192,14 @@ Summary:
         Instantiate(UnityEngine.Object)
         Instantiate(UnityEngine.Object,UnityEngine.Transform)
         Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
-        Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
         Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
         Instantiate<T>(T)
         Instantiate<T>(T,UnityEngine.Transform)
         Instantiate<T>(T,UnityEngine.Transform,System.Boolean)
-        Instantiate<T>(T,UnityEngine.Vector3,UnityEngine.Quaternion)
         Instantiate<T>(T,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
-        INTERNAL_CALL_Internal_InstantiateSingle(UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_Internal_InstantiateSingleWithParent(UnityEngine.Object,UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         Internal_CloneSingle(UnityEngine.Object)
         Internal_CloneSingleWithParent(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
-        Internal_InstantiateSingle(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
         Internal_InstantiateSingleWithParent(UnityEngine.Object,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
         set_name(System.String)
     UnityEngine.OcclusionArea
@@ -11467,32 +11499,24 @@ Summary:
     UnityEngine.Quaternion
         Angle(UnityEngine.Quaternion,UnityEngine.Quaternion)
         AxisAngle(UnityEngine.Vector3,System.Single)
-        Dot(UnityEngine.Quaternion,UnityEngine.Quaternion)
-        Euler(UnityEngine.Vector3)
         EulerAngles(System.Single,System.Single,System.Single)
         EulerAngles(UnityEngine.Vector3)
         EulerRotation(System.Single,System.Single,System.Single)
         EulerRotation(UnityEngine.Vector3)
         FromToRotation(UnityEngine.Vector3,UnityEngine.Vector3)
-        get_eulerAngles()
         get_Item(System.Int32)
         INTERNAL_CALL_AxisAngle(UnityEngine.Vector3&,System.Single,UnityEngine.Quaternion&)
         INTERNAL_CALL_FromToRotation(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_Internal_ToAxisAngleRad(UnityEngine.Quaternion&,UnityEngine.Vector3&,System.Single&)
-        INTERNAL_CALL_Internal_ToEulerRad(UnityEngine.Quaternion&,UnityEngine.Vector3&)
         INTERNAL_CALL_Inverse(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
         INTERNAL_CALL_Lerp(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
         INTERNAL_CALL_LerpUnclamped(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
         INTERNAL_CALL_SlerpUnclamped(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
-        Internal_MakePositive(UnityEngine.Vector3)
         Internal_ToAxisAngleRad(UnityEngine.Quaternion,UnityEngine.Vector3&,System.Single&)
-        Internal_ToEulerRad(UnityEngine.Quaternion)
         Inverse(UnityEngine.Quaternion)
         Lerp(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         LerpUnclamped(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         LookRotation(UnityEngine.Vector3)
-        op_Equality(UnityEngine.Quaternion,UnityEngine.Quaternion)
-        op_Inequality(UnityEngine.Quaternion,UnityEngine.Quaternion)
         RotateTowards(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         Set(System.Single,System.Single,System.Single,System.Single)
         set_eulerAngles(UnityEngine.Vector3)
@@ -11513,6 +11537,33 @@ Summary:
         ToEulerAngles(UnityEngine.Quaternion)
         ToString(System.String)
     UnityEngine.Random
+        .ctor()
+        ColorHSV()
+        ColorHSV(System.Single,System.Single)
+        ColorHSV(System.Single,System.Single,System.Single,System.Single)
+        ColorHSV(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+        ColorHSV(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+        get_insideUnitCircle()
+        get_insideUnitSphere()
+        get_onUnitSphere()
+        get_rotation()
+        get_rotationUniform()
+        get_seed()
+        get_state()
+        get_value()
+        GetRandomUnitCircle(UnityEngine.Vector2&)
+        InitState(System.Int32)
+        INTERNAL_get_insideUnitSphere(UnityEngine.Vector3&)
+        INTERNAL_get_onUnitSphere(UnityEngine.Vector3&)
+        INTERNAL_get_rotation(UnityEngine.Quaternion&)
+        INTERNAL_get_rotationUniform(UnityEngine.Quaternion&)
+        INTERNAL_get_state(UnityEngine.Random/State&)
+        INTERNAL_set_state(UnityEngine.Random/State&)
+        RandomRange(System.Int32,System.Int32)
+        RandomRange(System.Single,System.Single)
+        set_seed(System.Int32)
+        set_state(UnityEngine.Random/State)
+    UnityEngine.Random/State
     UnityEngine.RangeAttribute
     UnityEngine.RangeInt
     UnityEngine.Ray
@@ -12293,7 +12344,6 @@ Summary:
         get_maximumParticleDeltaTime()
         get_renderedFrameCount()
         get_smoothDeltaTime()
-        get_time()
         get_timeScale()
         get_timeSinceLevelLoad()
         get_unscaledDeltaTime()
@@ -12310,8 +12360,6 @@ Summary:
         get_deltaTime()
         get_fingerId()
         get_maximumPossiblePressure()
-        get_phase()
-        get_position()
         get_pressure()
         get_radius()
         get_radiusVariance()
@@ -12365,29 +12413,20 @@ Summary:
     UnityEngine.TouchScreenKeyboard_InternalConstructorHelperArguments
     UnityEngine.TouchScreenKeyboardType
     UnityEngine.TrackedReference
-        .ctor()
         op_Implicit(UnityEngine.TrackedReference)
         op_Inequality(UnityEngine.TrackedReference,UnityEngine.TrackedReference)
     UnityEngine.TrailRenderer
     UnityEngine.Transform
         DetachChildren()
-        Find(System.String)
         FindChild(System.String)
         get_eulerAngles()
         get_forward()
         get_hasChanged()
         get_hierarchyCapacity()
         get_hierarchyCount()
-        get_localEulerAngles()
-        get_localPosition()
-        get_localRotation()
-        get_localScale()
         get_lossyScale()
-        get_position()
         get_right()
         get_root()
-        get_rotation()
-        get_up()
         GetChildCount()
         GetLocalEulerAngles(UnityEngine.RotationOrder)
         GetSiblingIndex()
@@ -12404,12 +12443,7 @@ Summary:
         INTERNAL_CALL_TransformDirection(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_TransformPoint(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_TransformVector(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
-        INTERNAL_get_localPosition(UnityEngine.Vector3&)
-        INTERNAL_get_localRotation(UnityEngine.Quaternion&)
-        INTERNAL_get_localScale(UnityEngine.Vector3&)
         INTERNAL_get_lossyScale(UnityEngine.Vector3&)
-        INTERNAL_get_position(UnityEngine.Vector3&)
-        INTERNAL_get_rotation(UnityEngine.Quaternion&)
         InverseTransformDirection(System.Single,System.Single,System.Single)
         InverseTransformDirection(UnityEngine.Vector3)
         InverseTransformPoint(System.Single,System.Single,System.Single)
@@ -12435,9 +12469,6 @@ Summary:
         set_forward(UnityEngine.Vector3)
         set_hasChanged(System.Boolean)
         set_hierarchyCapacity(System.Int32)
-        set_localEulerAngles(UnityEngine.Vector3)
-        set_parent(UnityEngine.Transform)
-        set_parentInternal(UnityEngine.Transform)
         set_right(UnityEngine.Vector3)
         set_up(UnityEngine.Vector3)
         SetAsFirstSibling()
@@ -12513,8 +12544,6 @@ Summary:
         Normalize()
         op_Addition(UnityEngine.Vector2,UnityEngine.Vector2)
         op_Division(UnityEngine.Vector2,System.Single)
-        op_Implicit(UnityEngine.Vector2)
-        op_Implicit(UnityEngine.Vector3)
         op_Inequality(UnityEngine.Vector2,UnityEngine.Vector2)
         op_Multiply(System.Single,UnityEngine.Vector2)
         op_Multiply(UnityEngine.Vector2,System.Single)
@@ -12534,10 +12563,7 @@ Summary:
         .ctor(System.Single,System.Single)
         Angle(UnityEngine.Vector3,UnityEngine.Vector3)
         AngleBetween(UnityEngine.Vector3,UnityEngine.Vector3)
-        ClampMagnitude(UnityEngine.Vector3,System.Single)
         Cross(UnityEngine.Vector3,UnityEngine.Vector3)
-        Distance(UnityEngine.Vector3,UnityEngine.Vector3)
-        Dot(UnityEngine.Vector3,UnityEngine.Vector3)
         Exclude(UnityEngine.Vector3,UnityEngine.Vector3)
         get_down()
         get_forward()
@@ -12545,11 +12571,8 @@ Summary:
         get_Item(System.Int32)
         get_left()
         get_negativeInfinity()
-        get_normalized()
         get_positiveInfinity()
         get_right()
-        get_sqrMagnitude()
-        get_up()
         INTERNAL_CALL_Internal_OrthoNormalize2(UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_Internal_OrthoNormalize3(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_RotateTowards(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.Vector3&)
@@ -12558,17 +12581,10 @@ Summary:
         Internal_OrthoNormalize2(UnityEngine.Vector3&,UnityEngine.Vector3&)
         Internal_OrthoNormalize3(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&)
         LerpUnclamped(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-        Magnitude(UnityEngine.Vector3)
         Max(UnityEngine.Vector3,UnityEngine.Vector3)
         Min(UnityEngine.Vector3,UnityEngine.Vector3)
         MoveTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         Normalize()
-        Normalize(UnityEngine.Vector3)
-        op_Division(UnityEngine.Vector3,System.Single)
-        op_Equality(UnityEngine.Vector3,UnityEngine.Vector3)
-        op_Inequality(UnityEngine.Vector3,UnityEngine.Vector3)
-        op_Multiply(System.Single,UnityEngine.Vector3)
-        op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)
         op_UnaryNegation(UnityEngine.Vector3)
         OrthoNormalize(UnityEngine.Vector3&,UnityEngine.Vector3&)
         OrthoNormalize(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&)
@@ -12583,10 +12599,7 @@ Summary:
         SignedAngle(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
         Slerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         SlerpUnclamped(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-        SmoothDamp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&,System.Single)
         SmoothDamp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&,System.Single,System.Single)
-        SmoothDamp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&,System.Single,System.Single,System.Single)
-        SqrMagnitude(UnityEngine.Vector3)
         ToString(System.String)
     UnityEngine.Vector3Int
     UnityEngine.Vector4
@@ -12630,8 +12643,6 @@ Summary:
         .ctor()
     UnityEngine.WaitForFixedUpdate
         .ctor()
-    UnityEngine.WaitForSeconds
-        .ctor(System.Single)
     UnityEngine.WaitForSecondsRealtime
     UnityEngine.WaitUntil
     UnityEngine.WaitWhile
@@ -14096,7 +14107,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 7
-  Total Method Removals = 443
+  Total Method Removals = 441
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.BoxCollider
@@ -14172,7 +14183,6 @@ Summary:
         Internal_Raycast(UnityEngine.Collider,UnityEngine.Ray,UnityEngine.RaycastHit&,System.Single)
         Raycast(UnityEngine.Ray,UnityEngine.RaycastHit&,System.Single)
         set_contactOffset(System.Single)
-        set_enabled(System.Boolean)
         set_isTrigger(System.Boolean)
         set_material(UnityEngine.PhysicMaterial)
         set_sharedMaterial(UnityEngine.PhysicMaterial)
@@ -14425,7 +14435,6 @@ Summary:
     UnityEngine.RaycastHit
         CalculateRaycastTexCoord(UnityEngine.Vector2&,UnityEngine.Collider,UnityEngine.Vector2,UnityEngine.Vector3,System.Int32,System.Int32)
         get_barycentricCoordinate()
-        get_collider()
         get_distance()
         get_lightmapCoord()
         get_normal()
@@ -15526,7 +15535,7 @@ Summary:
     UnityEngine.XR.XRStats
 ---------------------------------------------------
 Mono.Cecil.ExportedType Removals:
-  Total: 1037
+  Total: 1034
 ---------------------------------------------------
 AOT.MonoPInvokeCallbackAttribute
 JetBrains.Annotations.AssertionMethodAttribute
@@ -15598,7 +15607,6 @@ UnityEngine.Analytics.UnityAnalyticsHandler
 UnityEngine.AnchoredJoint2D
 UnityEngine.AndroidActivityIndicatorStyle
 UnityEngine.AndroidInput
-UnityEngine.Animation
 UnityEngine.AnimationBlendMode
 UnityEngine.AnimationClip
 UnityEngine.AnimationClipPair
@@ -16260,7 +16268,6 @@ UnityEngine.Playables.ScriptPlayable`1
 UnityEngine.PlayerConnectionInternal
 UnityEngine.PlayerPrefs
 UnityEngine.PlayerPrefsException
-UnityEngine.PlayMode
 UnityEngine.PointEffector2D
 UnityEngine.PolygonCollider2D
 UnityEngine.Pose
@@ -16282,7 +16289,6 @@ UnityEngine.PropertyAttribute
 UnityEngine.QualityLevel
 UnityEngine.QualitySettings
 UnityEngine.QueueMode
-UnityEngine.Random
 UnityEngine.Random/State
 UnityEngine.RangeAttribute
 UnityEngine.RangeInt

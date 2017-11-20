@@ -112,6 +112,72 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &139370301
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2040232462}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0896
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1207
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+  m_IsPrefabParent: 0
+--- !u!4 &139370302 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 180d0b0887740db47859049a152ef1a9, type: 3}
+  m_PrefabInternal: {fileID: 139370301}
 --- !u!1 &368212260
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +659,7 @@ MonoBehaviour:
   PatternWidth: 0.08
   BarcodeID: 0
   MultiConfigFile: 
-  NFTDataName: Joker
+  NFTDataName: Joker2
   currentUseContPoseEstimation: 0
   currentFiltered: 0
   currentFilterSampleRate: 30
@@ -624,8 +690,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1723817208}
   m_LocalRotation: {x: -0.7071069, y: 0, z: 0, w: 0.70710677}
-  m_LocalPosition: {x: 0.0861, y: 0.1155, z: -0.02}
-  m_LocalScale: {x: 0.04, y: 0.040000003, z: 0.040000003}
+  m_LocalPosition: {x: 0.069, y: 0.1155, z: 0.0023}
+  m_LocalScale: {x: 0.0086269, y: 0.008626901, z: 0.008626901}
   m_Children: []
   m_Father: {fileID: 2040232462}
   m_RootOrder: 0
@@ -644,7 +710,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 8c983c5e595724775bdcdb163f7ff6a5, type: 2}
+  - {fileID: 2100000, guid: 8d7269c500abd194b8932f52a1b43c93, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -710,6 +776,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1723817209}
+  - {fileID: 139370302}
   m_Father: {fileID: 368212261}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

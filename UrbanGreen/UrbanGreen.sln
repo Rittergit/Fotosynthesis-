@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanGreen", "UrbanGreen.csproj", "{4562ECC3-E96C-6F58-302F-279411A92046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanGreen.Editor", "UrbanGreen.Editor.csproj", "{596021E8-F1BF-6462-F2DB-0F4FE5178762}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4562ECC3-E96C-6F58-302F-279411A92046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4562ECC3-E96C-6F58-302F-279411A92046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4562ECC3-E96C-6F58-302F-279411A92046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4562ECC3-E96C-6F58-302F-279411A92046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596021E8-F1BF-6462-F2DB-0F4FE5178762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596021E8-F1BF-6462-F2DB-0F4FE5178762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596021E8-F1BF-6462-F2DB-0F4FE5178762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596021E8-F1BF-6462-F2DB-0F4FE5178762}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

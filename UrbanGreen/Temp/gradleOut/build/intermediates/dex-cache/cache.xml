@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="P:\Tim\UnityProjects\UrbanGreen\Temp\gradleOut\libs\unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="997bed8c5290bdbae5c8767ba09af501f19e1c08">
+        <dex dex="P:\Tim\UnityProjects\UrbanGreen\Temp\gradleOut\build\intermediates\pre-dexed\release\unity-classes_85beb52a67a3518345ed6de8cc923331c5feb3a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="P:\Tim\UnityProjects\UrbanGreen\Temp\gradleOut\Screenshot\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="c895cbcf39559b27fdcf3e101a20c105d5da1268">
+        <dex dex="P:\Tim\UnityProjects\UrbanGreen\Temp\gradleOut\build\intermediates\pre-dexed\release\classes_33172a8ca0e46cdd4b1acd1b9c4e6fb618a20dad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="P:\Tim\UnityProjects\UrbanGreen\Temp\gradleOut\Screenshot\build\intermediates\bundles\default\libs\AndroidScreenshot.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="ed331830c9df835cb0855b8736c8129ff9099b6a">
+        <dex dex="P:\Tim\UnityProjects\UrbanGreen\Temp\gradleOut\build\intermediates\pre-dexed\release\AndroidScreenshot_862c5b8fd06dc842cbbfd3a637b6917810ca0e05.jar" />
+    </item>
+
+</items>
